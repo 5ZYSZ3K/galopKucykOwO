@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "61e2e24d3be189e946646c16"
+  },
+  "rzecz": "Bieganie",
+  "Cena": 0,
+  "Czas": 30,
+  "user": ""
+},{
+  "_id": {
+    "$oid": "61e2e2623be189e946646c17"
+  },
+  "rzecz": "Zakupy",
+  "Cena": 200,
+  "Czas": 30,
+  "user": ""
+}]

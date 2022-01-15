@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "61e2df193be189e946646b8d"
+  },
+  "rok": 2022,
+  "miesiąć": "styczeń",
+  "tydzień": 1,
+  "kategoria": "Sport",
+  "ilość": 667,
+  "user": ""
+},{
+  "_id": {
+    "$oid": "61e2df2c3be189e946646b8e"
+  },
+  "rok": 2022,
+  "miesiąć": "styczeń",
+  "tydzień": 2,
+  "kategoria": "Gry",
+  "ilość": 665,
+  "user": ""
+},{
+  "_id": {
+    "$oid": "61e2df3b3be189e946646b8f"
+  },
+  "rok": 2022,
+  "miesiąć": "styczeń",
+  "tydzień": 3,
+  "kategoria": "Piwo",
+  "ilość": 333,
+  "user": ""
+},{
+  "_id": {
+    "$oid": "61e2df483be189e946646b90"
+  },
+  "rok": 2022,
+  "miesiąć": "styczeń",
+  "tydzień": 4,
+  "kategoria": "Więcej Piwa",
+  "ilość": 9876,
+  "user": ""
+}]

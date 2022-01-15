@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "61e2dca03be189e946646b77"
+  },
+  "rok": 2022,
+  "miesiąc": "styczeń",
+  "tydzień": 1,
+  "ilość": "2115",
+  "user": ""
+},{
+  "_id": {
+    "$oid": "61e2dcb43be189e946646b78"
+  },
+  "rok": 2022,
+  "miesiąc": "styczeń",
+  "tydzień": 2,
+  "ilość": "66",
+  "user": ""
+},{
+  "_id": {
+    "$oid": "61e2dd243be189e946646b79"
+  },
+  "rok": 2022,
+  "miesiąc": "styczeń",
+  "tydzień": 3,
+  "ilość": "123",
+  "user": ""
+},{
+  "_id": {
+    "$oid": "61e2dd2e3be189e946646b7a"
+  },
+  "rok": 2022,
+  "miesiąc": "styczeń",
+  "tydzień": 4,
+  "ilość": "96",
+  "user": ""
+}]

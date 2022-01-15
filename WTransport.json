@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "61e2ddf43be189e946646b7e"
+  },
+  "rok": 2022,
+  "miesiąć": "styczeń",
+  "rodzaj": "samochód",
+  "ilość": "911",
+  "user": ""
+},{
+  "_id": {
+    "$oid": "61e2de293be189e946646b7f"
+  },
+  "rok": 2022,
+  "miesiąć": "styczeń",
+  "rodzaj": "komunikacja",
+  "ilość": "68",
+  "user": ""
+}]

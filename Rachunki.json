@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "61e2db2b3be189e946646b6c"
+  },
+  "rok": 2022,
+  "miesiąc": "styczeń",
+  "kategoria": "woda",
+  "ilość": 2137,
+  "user": ""
+},{
+  "_id": {
+    "$oid": "61e2db4c3be189e946646b6e"
+  },
+  "rok": 2022,
+  "miesiąc": "styczeń",
+  "kategoria": "prąd",
+  "ilość": 420,
+  "user": ""
+},{
+  "_id": {
+    "$oid": "61e2db593be189e946646b6f"
+  },
+  "rok": 2022,
+  "miesiąc": "styczeń",
+  "kategoria": "mieszkanie",
+  "ilość": 1337,
+  "user": ""
+},{
+  "_id": {
+    "$oid": "61e2ea1100496b4a67249501"
+  },
+  "rok": 2022,
+  "miesiąc": "styczeń",
+  "kategoria": "gaz",
+  "ilość": 3721,
+  "user": ""
+}]

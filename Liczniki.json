@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "61e2ea4600496b4a67249505"
+  },
+  "rok": 2022,
+  "miesiąć": "styczeń",
+  "kategoria": "woda",
+  "stan": 2000,
+  "user": ""
+},{
+  "_id": {
+    "$oid": "61e2ea6200496b4a67249506"
+  },
+  "rok": 2022,
+  "miesiąć": "styczeń",
+  "kategoria": "gaz",
+  "stan": 2000,
+  "user": ""
+},{
+  "_id": {
+    "$oid": "61e2ea6b00496b4a67249507"
+  },
+  "rok": 2022,
+  "miesiąć": "styczeń",
+  "kategoria": "prąd",
+  "stan": 2000,
+  "user": ""
+}]

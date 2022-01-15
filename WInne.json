@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "61e2dfd63be189e946646b96"
+  },
+  "rok": 2022,
+  "miesiąć": "styczeń",
+  "tydzień": 1,
+  "ilość": 321,
+  "user": ""
+},{
+  "_id": {
+    "$oid": "61e2dfe13be189e946646b97"
+  },
+  "rok": 2022,
+  "miesiąć": "styczeń",
+  "tydzień": 2,
+  "ilość": 213,
+  "user": ""
+},{
+  "_id": {
+    "$oid": "61e2dfeb3be189e946646b98"
+  },
+  "rok": 2022,
+  "miesiąć": "styczeń",
+  "tydzień": 3,
+  "ilość": 123,
+  "user": ""
+},{
+  "_id": {
+    "$oid": "61e2e0813be189e946646baf"
+  },
+  "rok": 2022,
+  "miesiąć": "styczeń",
+  "tydzień": 4,
+  "ilość": 132,
+  "user": ""
+}]
