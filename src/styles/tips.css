@@ -1,6 +1,6 @@
 @media screen {
     .tak{
-        width:30vw;
+        width:50vw;
         background-color: rgba(255,255,255,0.6);
         margin-right: auto;
         margin-left: auto;
@@ -11,6 +11,7 @@
         font-size: 3vh;
     }
     .top{
+        color:white;
         height: 5vh;
         background-color: blueviolet;
         padding-top: 3vh;
@@ -23,7 +24,8 @@
         font-size: 3vh;
     }
     .down{
-        width: 29vw;
+        color: blueviolet;
+        width: 49vw;
         background-color: rgba(255,255,255,0.6);
         margin-right: auto;
         margin-left: auto;
