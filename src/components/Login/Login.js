@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState, useContext } from "react";
 import AuthContext from "../Context/AuthContext";
 import "../../styles/login.css";
+import { NavLink } from "react-router-dom";
 
 function Login() {
   const [login, setLogin] = useState("");
@@ -27,17 +28,22 @@ function Login() {
       });
   };
   return (
+    <div className="prosze">
     <div className="App">
-      <div>
-        <input onChange={loginHandler} placeholder="login" />
+      <div className="main">
+        <img className="logo" src="/assets/Logo.svg" />
+        <input onChange={loginHandler} placeholder="login" className="logg" />
         <input
           type="password"
           onChange={passwordHandler}
           placeholder="password"
+          className="logg"
         />
-        <input type="button" onClick={submitHandler} value="Zaloguj" />
+        <input type="button" onClick={submitHandler} value="Zaloguj" className="button logg"  />
+        <p className="register">Nie masz konta? <NavLink to="/register">Zarejestruj się</NavLink></p>
         <p style={{ color: "red" }}>{errorMessage}</p>
       </div>
+    </div>
     </div>
   );
 }

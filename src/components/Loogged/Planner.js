@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import TodoAdder from "./Planner/TodoAdder";
 import Todo from "./Planner/Todo";
 import axios from "axios";
+import "../../styles/planer.css";
 
 export default function Planner() {
   const [todos, setTodos] = useState([]);
@@ -37,6 +38,8 @@ export default function Planner() {
     <div className="planner">
       <div className="todo">
         <div className="todos">
+        <TodoAdder type="todo" />
+        <hr></hr>
           {todos.map((todo) => (
             <Todo
               id={todo._id}
@@ -47,11 +50,16 @@ export default function Planner() {
               remove={remove}
             />
           ))}
+          
         </div>
-        <TodoAdder type="todo" />
+        <hr className="fm"></hr>
+        
       </div>
       <div className="nottodo">
-        <div>
+      <TodoAdder type="nottodo" />
+      <hr></hr>
+      
+        
           {nottodos.map((todo) => (
             <Todo
               id={todo._id}
@@ -62,8 +70,10 @@ export default function Planner() {
               remove={remove}
             />
           ))}
-        </div>
-        <TodoAdder type="nottodo" />
+          
+        
+        <hr className="fm"></hr>
+        
       </div>
       <p>{message}</p>
     </div>

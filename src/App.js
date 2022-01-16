@@ -1,8 +1,7 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import "./App.css";
 import axios from "axios";
 import { useContext } from "react";
-import Menu from "./components/Utility/Menu";
 import Home from "./components/Loogged/Home";
 import Settings from "./components/Loogged/Settings";
 import Planner from "./components/Loogged/Planner";
@@ -21,7 +20,11 @@ function App() {
   const { isAuthenticated } = useContext(AuthContext);
   return (
     <BrowserRouter>
-      {isAuthenticated && <Menu />}
+      {isAuthenticated && (
+        <NavLink to="/" className="nav">
+          <img src="/assets/powrot.svg" alt="Strzalka" />
+        </NavLink>
+      )}
       <Routes>
         <Route path="/login" element={isAuthenticated ? <Home /> : <Login />} />
         <Route

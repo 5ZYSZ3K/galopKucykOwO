@@ -24,15 +24,16 @@ export default function TodoAdder({ type }) {
       });
   };
   return (
-    <form onSubmit={submitHandler}>
-      <input onChange={nameHandler} placeholder="nazwa" />
-      <input type="number" onChange={priceHandler} placeholder="koszta" />
+    <form onSubmit={submitHandler} className="formm">
+      <input onChange={nameHandler} placeholder="nazwa" className="adder"/>
+      <input type="number" onChange={priceHandler} placeholder="koszta" className="adder"/>
       <input
         type="number"
         onChange={timeHandler}
         placeholder="czas trwania w minutach"
+        className="adder"
       />
-      <input type="submit" value="Dodaj" />
+      <input type="submit" value="Dodaj" className="adder button"/>
       <p>{errorMessage}</p>
     </form>
   );

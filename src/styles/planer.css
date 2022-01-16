@@ -1,0 +1,87 @@
+@media screen {
+  .planner {
+    display: flex;
+    width: 100vw;
+    position: relative;
+  }
+  .todo {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    float: left;
+    width: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    overflow: scroll;
+    height: 90vh;
+  }
+  .nottodo {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    float: left;
+    width: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    overflow: scroll;
+    height: 90vh;
+  }
+  .nav {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+  }
+  .adder {
+    width: 30vw;
+    height: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1em;
+    color: blueviolet;
+  }
+  .items {
+    vertical-align: middle;
+    width: 30vw;
+    height: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    border-radius: 10px;
+    color: blueviolet;
+    background-color: white;
+    font-size: 1em;
+  }
+  .but {
+    border-radius: 10px;
+  }
+  .todos > div {
+    background-color: rgba(148, 104, 230, 0.6);
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+  }
+  .nottodo > div {
+    background-color: rgba(148, 104, 230, 0.6);
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+  }
+  hr {
+    margin: 2vh;
+  }
+  .fm {
+    margin-bottom: auto;
+    margin: 2vh;
+  }
+  .formm {
+    margin-top: auto;
+  }
+}

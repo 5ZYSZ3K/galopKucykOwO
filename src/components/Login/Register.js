@@ -23,9 +23,11 @@ const Register = () => {
       axios
         .post("http://localhost:5000/login/create", { login, password })
         .then((data) => {
+          console.log(data)
           checkAuthentication();
         })
-        .catch(() => {
+        .catch((e) => {
+          console.log(e);
           setErrorMessage(
             "Coś się zepsuło i nie można było zapisać do bazy, więc spróbuj jeszcze raz"
           );
@@ -33,22 +35,27 @@ const Register = () => {
     } else setErrorMessage("Hasła muszą być identyczne!");
   };
   return (
+    <div className="prosze">
     <div className="App">
-      <div>
-        <input onChange={loginHandler} placeholder="login" />
+      <div className="main">
+        <img className="logo" src="/assets/Logo.svg" />
+        <input onChange={loginHandler} placeholder="login" className="logg"/>
         <input
           type="password"
           onChange={passwordHandler}
           placeholder="password"
+          className="logg"
         />
         <input
           type="password"
           onChange={passwordVerifierHandler}
           placeholder="repeat password"
+          className="logg"
         />
-        <input type="button" onClick={submitHandler} value="Zarejestruj" />
+        <input type="button" onClick={submitHandler} value="Zarejestruj" className="button logg" />
         <p style={{ color: "red" }}>{errorMessage}</p>
       </div>
+    </div>
     </div>
   );
 };
