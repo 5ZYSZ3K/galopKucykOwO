@@ -3,10 +3,9 @@ import Logout from "../Login/Logout";
 
 const Menu = () => {
   return (
-    <div>
-      <NavLink to="/settings">Ustawienia</NavLink>
-      <br />
-      <NavLink to="/authors">Twórcy</NavLink>
+    <div className="nav">
+      <NavLink to="/settings" className="a" ><img src="/assets/Ustawienia.svg" className="settings"/></NavLink>
+      <NavLink to="/authors"><img src="/assets/Ustawienia.svg" className="authors"/></NavLink>
       <Logout />
     </div>
   );

@@ -18,7 +18,7 @@ export default function Logout() {
   };
   return (
     <div className="logout">
-      <button onClick={handleClick}>Wyloguj się</button>
+      <button onClick={handleClick} className="exit"><img src="/assets/Wyloguj.svg" className="out"/></button>
       {errorMessage && <p>{errorMessage}</p>}
     </div>
   );

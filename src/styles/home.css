@@ -1,0 +1,19 @@
+@media screen {
+    .home{
+        display: flexbox;
+        position: relative;
+    }
+    .div{
+        height: 20vh;
+        width: 20vh;
+        background-color: white;
+        border-radius: 100%;
+        text-align: center;
+        background-size: cover;
+        background-repeat: none;
+    }
+    .blue{
+        background-image:  url("../../public/assets/Niebieska.svg");
+        background-repeat: none;
+    }
+}
