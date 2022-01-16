@@ -36,21 +36,22 @@ export default function ExpenseAdder() {
     });
   };
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={submitHandler} className="qa">
       <input
         type="number"
         onChange={valueHandler}
-        placeholder="ilość pieniędzy"
+        placeholder="kwota"
+        className="ans"
       />
-      <input type="date" onChange={dateHandler} />
-      <select onChange={categoryHandler}>
+      <input type="date" onChange={dateHandler} className="ans" />
+      <select onChange={categoryHandler} className="ans">
         <option>Inne</option>
         <option>Rachunki</option>
         <option>Jedzenie</option>
         <option>Rozrywka</option>
         <option>Transport</option>
       </select>
-      <input type="submit" value="wyślij" />
+      <input type="submit" value="wyślij" className="ans button col"/>
     </form>
   );
 }

@@ -39,17 +39,17 @@ const Register = () => {
     <div className="App">
       <div className="main">
         <img className="logo" src="/assets/Logo.svg" />
-        <input onChange={loginHandler} placeholder="login" className="logg"/>
+        <input onChange={loginHandler} placeholder="Login" className="logg"/>
         <input
           type="password"
           onChange={passwordHandler}
-          placeholder="password"
+          placeholder="Hasło"
           className="logg"
         />
         <input
           type="password"
           onChange={passwordVerifierHandler}
-          placeholder="repeat password"
+          placeholder="Powtórz hasło"
           className="logg"
         />
         <input type="button" onClick={submitHandler} value="Zarejestruj" className="button logg" />

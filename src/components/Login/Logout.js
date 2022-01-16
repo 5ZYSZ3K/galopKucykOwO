@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useContext, useState } from "react";
 import AuthContext from "../Context/AuthContext";
+import "../../styles/home.css";
 
 export default function Logout() {
   const [errorMessage, setErrorMessage] = useState("");
@@ -18,7 +19,7 @@ export default function Logout() {
   };
   return (
     <div className="logout">
-      <button onClick={handleClick} className="exit"><img src="/assets/Wyloguj.svg" className="out"/></button>
+      <button onClick={handleClick} className="exit"><img src="/assets/Wyloguj.svg" className="mniejsze"/></button>
       {errorMessage && <p>{errorMessage}</p>}
     </div>
   );

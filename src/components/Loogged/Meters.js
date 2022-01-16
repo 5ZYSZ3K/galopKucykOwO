@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react/cjs/react.development";
 import MeterAdder from "./Meters/MeterAdder";
+import "../../styles/meters.css";
 
 export default function Meters() {
   const [meters, setMeters] = useState([]);
@@ -17,7 +18,9 @@ export default function Meters() {
       let prad = 0;
       let gaz = 0;
       let woda = 0;
-      let counter = 0;
+      let counterP = 0;
+      let counterW = 0;
+      let counterG = 0;
       data.data.forEach((el) => {
         if (
           parseInt(el.date.split("-")[0]) * 12 +
@@ -52,39 +55,48 @@ export default function Meters() {
             parseInt(el.date.split("-")[1]);
           l.gaz = el.value;
         }
-        if (el.category === "Prąd") prad += el.value;
-        else if (el.category === "Woda") woda += el.value;
-        else if (el.category === "Gaz") gaz += el.value;
-        counter++;
+        if (el.category === "Prąd"){
+          counterP++;
+          prad += el.value}
+        else if (el.category === "Woda"){ 
+          counterW++;
+          woda += el.value;}
+        else if (el.category === "Gaz"){ 
+          counterG++;
+          gaz += el.value;}
       });
       setLast(l);
       setAverage({
-        prad: prad / counter,
-        woda: woda / counter,
-        gaz: gaz / counter,
+        prad: prad / counterP,
+        woda: woda / counterW,
+        gaz: gaz / counterG,
       });
     });
   }, []);
   return (
-    <div>
+    <div className="first">
+      <div className="organise">
       {meters.map((data) => (
-        <div key={data._id}>
+        <div key={data._id} className="blocks">
           <p>data: {data.date}</p>
           <p>kategoria: {data.category}</p>
           <p>wartość: {data.value}</p>
         </div>
+        
       ))}
+      </div>
       <MeterAdder />
-      <div>
+      <div className="upper">
+      <div className="av">
         <p>Średnie zużycie wody: {average.woda}</p>
         <p>Średnie zużycie prądu: {average.prad}</p>
         <p>Średnie zużycie gazu: {average.gaz}</p>
       </div>
-      <p>W ostatnim miesiącu:</p>
-      <div>
-        <p>zużycie wody: {last.woda}</p>
-        <p>zużycie prądu: {last.prad}</p>
-        <p>zużycie gazu: {last.gaz}</p>
+      <div className="av">
+        <p>Zużycie wody na ostatnim odczycie: {last.woda}</p>
+        <p>Zużycie prądu na ostatnim odczycie: {last.prad}</p>
+        <p>Zużycie gazu na ostatnim odczycie: {last.gaz}</p>
+      </div>
       </div>
     </div>
   );

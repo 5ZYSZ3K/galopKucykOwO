@@ -1,15 +1,14 @@
 import { NavLink } from "react-router-dom";
 import Logout from "../Login/Logout";
 
-const Menu = () => {
-  return (
-    <div>
-      <NavLink to="/settings">Ustawienia</NavLink>
-      <br />
-      <NavLink to="/authors">Twórcy</NavLink>
-      <Logout />
-    </div>
-  );
-};
+// const Menu = () => {
+//   return (
+//     // <div className="klasaa">
+//     //   <div className="div4"><NavLink to="/settings"><img src="/assets/Ustawienia.svg" className="out"/></NavLink></div>
+//     //   <div className="div"><NavLink to="/authors"><img src="/assets/tworcy.svg" className="out"/></NavLink></div>
+//     //   <div className="div"><Logout /></div>
+//     // </div>
+//   // );
+// };
 
-export default Menu;
+// export default Menu;

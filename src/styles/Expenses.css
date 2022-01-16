@@ -1,0 +1,46 @@
+@media screen {
+    .qa{
+        background-color: rgba(255,255,255,0.6);
+        width: 25vw;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        padding: 1%;
+        margin-top: 1vh;
+    }
+    .ans{
+        text-align: center;
+        color: blueviolet;
+        height: 4vh;
+        width: 20vw;
+        border-radius: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1vh;
+        font-size: 1em;     
+    }
+    .col{
+        color: white;
+    }
+    .results{
+        margin: 2vh;
+        width: 40vw;
+        height: 37vh;
+        background-color: rgba(255,255,255,0.6);
+        border-radius: 10px;
+        display: block;
+        padding-top: 0.1vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .results > p {
+        background-color: blueviolet;
+        border-radius: 10px;
+        height:3vh;
+        width: 40vh;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+    }
+}

@@ -40,6 +40,7 @@ export default function Planner() {
         <div className="todos">
         <TodoAdder type="todo" />
         <hr></hr>
+        <p className="td">To zrobie</p>
           {todos.map((todo) => (
             <Todo
               id={todo._id}
@@ -58,7 +59,7 @@ export default function Planner() {
       <div className="nottodo">
       <TodoAdder type="nottodo" />
       <hr></hr>
-      
+      <p className="td">Tego unikam</p>
         
           {nottodos.map((todo) => (
             <Todo
@@ -73,6 +74,7 @@ export default function Planner() {
           
         
         <hr className="fm"></hr>
+        
         
       </div>
       <p>{message}</p>

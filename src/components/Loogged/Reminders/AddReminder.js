@@ -39,16 +39,18 @@ export default function AddReminder() {
       .catch((err) => console.log(err));
   };
   return (
-    <form onSubmit={submitHandler}>
-      <input onChange={nameHandler} placeholder="nazwa" />
-      <input onChange={dateHandler} type="date" />
-      <input onChange={timeHandler} type="time" min="00:00" max="23:59" />
+    <form onSubmit={submitHandler} className="qa">
+      <input onChange={nameHandler} placeholder="nazwa" className="ans"/>
+      <input onChange={dateHandler} type="date" className="ans"/>
+      <input onChange={timeHandler} type="time" min="00:00" max="23:59" className="ans"/>
       <input
         onChange={periodicityHandler}
         type="number"
-        placeholder="ustaw, co ile dni ma się powtarzać"
+        placeholder="co ile powtarzać [dni]"
+        className="ans"
       />
-      <input type="submit" value="dodaj" />
+      <input type="submit" value="dodaj" 
+      className="ans button col"/>
     </form>
   );
 }

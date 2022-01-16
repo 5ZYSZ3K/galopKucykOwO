@@ -28,15 +28,15 @@ export default function MeterAdder() {
     });
   };
   return (
-    <form onSubmit={submitHandler}>
-      <input type="number" onChange={valueHandler} placeholder="wartość" />
-      <input type="date" onChange={dateHandler} />
-      <select onChange={categoryHandler}>
+    <form onSubmit={submitHandler} className="clear">
+      <input type="number" onChange={valueHandler} placeholder="wartość" className="Madd" />
+      <input type="date" onChange={dateHandler} className="Madd" />
+      <select onChange={categoryHandler} className="Madd">
         <option>Prąd</option>
         <option>Woda</option>
         <option>Gaz</option>
       </select>
-      <input type="submit" value="wyślij" />
+      <input type="submit" value="wyślij" className="Madd button color"/>
     </form>
   );
 }

@@ -4,16 +4,174 @@
         position: relative;
     }
     .div{
-        height: 20vh;
-        width: 20vh;
-        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        display: flex;
+        height: 14vh;
+        width: 14vh;
+        background-color: rgba(0,0,0,0);
         border-radius: 100%;
         text-align: center;
         background-size: cover;
         background-repeat: none;
+        background-image:  url("../../public/assets/Rozowa.svg");
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+    }
+    .div2{
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        display: flex;
+        height: 20vh;
+        width: 20vh;
+        background-color: rgba(0,0,0,0);
+        border-radius: 100%;
+        text-align: center;
+        background-size: cover;
+        background-repeat: none;
+        background-image:  url("../../public/assets/Niebieska.svg");
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+    }
+    .div3{
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        display: flex;
+        height: 23vh;
+        width: 23vh;
+        background-color: rgba(0,0,0,0);
+        border-radius: 100%;
+        text-align: center;
+        background-size: cover;
+        background-repeat: none;
+        background-image:  url("../../public/assets/Fioletowa.svg");
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+    }
+    .div4{
+        margin-left: auto;
+        margin-right: auto; 
+        position: relative;
+        display: flex;
+        height: 16vh;
+        width: 16vh;
+        background-color: rgba(0,0,0,0);
+        border-radius: 100%;
+        text-align: center;
+        background-size: cover;
+        background-repeat: none;
+        background-image:  url("../../public/assets/InnaFioletowa.svg");
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+    }
+    .div5{
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        display: flex;
+        height: 30vh;
+        width: 30vh;
+        background-color: rgba(0,0,0,0);
+        border-radius: 100%;
+        text-align: center;
+        background-size: cover;
+        background-repeat: none;
+        background-image:  url("../../public/assets/Rozowa.svg");
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
     }
     .blue{
         background-image:  url("../../public/assets/Niebieska.svg");
         background-repeat: none;
+        border-radius: 100%;
+        background-size:cover;
+    }
+    .exit{
+        background-color: rgba(255,255,255,0);
+        border: none;
+        outline: none;
+    }
+    .exit:hover{
+        cursor: pointer;
+    }
+    .klasaa{
+        display: flex;
+    }
+    .cl{
+        margin-left: auto;
+        margin-right: auto;
+        display: flexbox;
+    }
+    .k1{
+        position: absolute;
+        margin-left: 20vw;
+        margin-top: 34vh; 
+    }
+    .k2{
+        position: absolute;
+        margin-left: 13vw;
+        margin-top: 14vh; 
+    }
+    .k3{
+        position: absolute;
+        margin-left: 82vw;
+        margin-top: 44vh; 
+    }
+    .k4{
+        position: absolute;
+        margin-left: 65vw;
+        margin-top: 40vh; 
+    }
+    .k5{
+        position: absolute;
+        margin-left: 44vw;
+        margin-top: 25vh; 
+    }
+    .k6{
+        position: absolute;
+        margin-left: 30vw;
+        margin-top: 17vh; 
+    }
+    .k7{
+        position: absolute;
+        margin-left: 60vw;
+        margin-top: 15vh; 
+    }
+    .k8{
+        position: absolute;
+        margin-left: 33vw;
+        margin-top: 45vh; 
+    }
+    .k9{
+        position: absolute;
+        margin-left: 75vw;
+        margin-top: 26vh; 
+    }
+    .mniejsze{
+        height:10vh;
+    }
+    .wiekszemniejsze{
+        height:15vh;
+    }
+    .sredniemniejsze{
+        height:13vh;
     }
 }

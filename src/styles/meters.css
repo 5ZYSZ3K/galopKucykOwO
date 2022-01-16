@@ -1,0 +1,101 @@
+@media screen {
+
+    .upper{
+        margin-top: 10vh;
+        display: flex;
+        position: relative;
+        height: 23vh;
+        text-align: center;
+        overflow:auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first{
+        position: relative;
+        display: flexbox;
+        width: 100vw;
+        text-align: center;
+    }
+    .organise{
+        display: flex;
+        position: relative;
+        height: 23vh;
+        text-align: center;
+        overflow:auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .blocks:first-of-type{
+        margin-left: auto;
+    }
+    .blocks:last-of-type{
+        margin-right: auto;
+    }
+    .blocks {
+        float: left;
+        margin: 2vh;
+        width: 12vw;
+        background-color: rgba(255,255,255,0.6);
+        border-radius: 10px;
+        display: block;
+    }
+    .blocks > p {
+        background-color: blueviolet;
+        border-radius: 10px;
+        width: 10vw;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+    }
+    .clear{
+        clear: both;
+        background-color: rgba(255,255,255,0.6);
+        width: 25vw;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        padding: 1%;
+        margin-top: 5vh;
+
+    }
+    .Madd{
+        text-align: center;
+        color: blueviolet;
+        height: 4vh;
+        width: 20vw;
+        border-radius: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1vh;
+        font-size: 1em;
+
+    }
+    .color{
+        color: white;
+    }
+    .av{
+        margin: 2vh;
+        width: 30vw;
+        height: 19vh;
+        background-color: rgba(255,255,255,0.6);
+        border-radius: 10px;
+        display: block;        
+    }
+    .av > p {
+        background-color: blueviolet;
+        border-radius: 10px;
+        height: 3.5vh;
+        width: 40vh;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        padding-top: 0.4vh;
+    }
+    .av:first-of-type{
+        margin-left: auto;
+    }
+    .av:last-of-type{
+        margin-right: auto;
+    }
+}

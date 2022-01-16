@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react/cjs/react.development";
 import ExpenseAdder from "./Expenses/ExpenseAdder";
+import "../../styles/Expenses.css";
 
 export default function Expenses() {
   const [expenses, setExpenses] = useState([]);
@@ -27,16 +28,18 @@ export default function Expenses() {
     });
   }, []);
   return (
-    <div>
+    <div className="first">
+      <div className="organise">
       {expenses.map((expense) => (
-        <div key={expense._id}>
+        <div key={expense._id} className="blocks">
           <p>Wydane pieniądze: {expense.value}</p>
           <p>data: {expense.date}</p>
           <p>Kategoria: {expense.category}</p>
         </div>
       ))}
+      </div>
       <ExpenseAdder />
-      <div>
+      <div className="results">
         <p>Podsumowanie miesiąca</p>
         <p>Wydatki łącznie: {summary.sum}</p>
         <p>Jedzenie: {summary.Jedzenie}</p>

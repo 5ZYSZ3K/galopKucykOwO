@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react/cjs/react.development";
+import "../../styles/tips.css";
 
 export default function Tips() {
   const [tip, setTip] = useState("");
@@ -9,5 +10,8 @@ export default function Tips() {
       setTip(data.data.tip);
     });
   }, []);
-  return <div>Porada: {tip}</div>;
+  return (<div className="tak">
+    <div className="top">Porada:</div>
+    <div className="down">{tip}</div>
+    </div>)
 }
